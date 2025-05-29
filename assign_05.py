@@ -2,9 +2,10 @@
 
 # Created by: Joanna Keza
 # Date: May 21, 2025
-# This program takes a time in seconds 
-# and converts it into hours, minutes, and 
-# remaining seconds. 
+# This program takes a time in seconds
+# and converts it into hours, minutes, and
+# remaining seconds.
+
 
 def convert_time(player_times):
     converted_times = []
@@ -34,7 +35,7 @@ def main():
     # list to store input times for each player
     player_seconds = []
     # loops 3 times to get the times for 3 players
-    for counter in range(0,3):
+    for counter in range(0, 3):
         # Making sure the user's inputs are valid
         while True:
             # getting the user's input (time in seconds)
@@ -44,7 +45,11 @@ def main():
                 seconds_float = float(seconds_string)
                 # checks for invalid input, time cannot be negative
                 if seconds_float < 0:
-                    print("{} is not valid input. Seconds cannot be negative".format(seconds_float))
+                    print(
+                        "{} is not valid input. Seconds cannot be negative".format(
+                            seconds_float
+                        )
+                    )
                 else:
                     # if the input is in the allowed range, it leaves the loop
                     player_seconds.append(seconds_float)
@@ -60,13 +65,18 @@ def main():
     for time in converted:
         # using the original input time for reference
         original = player_seconds[counter]
-        
-        # blank line 
+
+        # blank line
         print("\n")
         # displays the conversions for each player
-        print("He/She ran {} seconds, which is equal to {} hour(s), {} minutes and {} remaining seconds".format(original, time[0], time[1], time[2]))
+        print(
+            "He/She ran {} seconds, which is equal to {} hour(s), {} minutes and {} remaining seconds".format(
+                original, time[0], time[1], time[2]
+            )
+        )
         # moves onto the next player's time
-        counter +=1
+        counter += 1
+
 
 # Thank you message
 print("\n")
