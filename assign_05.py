@@ -7,10 +7,10 @@
 # remaining seconds.
 
 
-def convert_time(player_times):
+def convert_time(player_seconds):
     converted_times = []
     # loop through each time from the list for each player
-    for time in player_times:
+    for time in player_seconds:
         # calculate the hours
         hours = time // 3600
         # calculate the minutes
@@ -78,10 +78,10 @@ def main():
         counter += 1
 
 
-# Thank you message
-print("\n")
-print("\n")
-print("Thank you for using my program")
+    # Thank you message
+    print("\n")
+    print("\n")
+    print("Thank you for using my program")
 
 
 if __name__ == "__main__":
